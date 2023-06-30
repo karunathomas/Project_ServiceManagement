@@ -6,13 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import com.qa.utilities.ExcelUtility;
+import com.qa.utilities.FakerUtility;
 import com.qa.utilities.PageUtility;
 
 public class SendSms {
 public WebDriver driver;
+PageUtility page;
 	
 	public SendSms(WebDriver driver) {
 	this.driver=driver;
@@ -23,12 +24,26 @@ public WebDriver driver;
 	@FindBy(xpath="//button[@value='Submit']")WebElement submit;
 	@FindBy(xpath="(//button[text()='Close'])[1]")WebElement close;
 	
-	public void sendMessage() throws IOException {
-		Select selectObj=new Select(dropDown);
-		selectObj.selectByIndex(2);
-		String Message=ExcelUtility.getString(1, 21, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
-		PageUtility.enterText(Msg, Message);
-		PageUtility.clickOnElement(submit);
-		PageUtility.clickOnElement(close);
+	public void verifyUserIsAbleToSelectRecepientName() {
+		page.selectDropdownbyText(dropDown, "Aji");
 	}
+	
+	public void verifyUserIsAbleToEnterMessage() throws IOException {
+		String Message=ExcelUtility.getString(1, 21, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
+		page.enterText(Msg, Message);
+	}
+	public void clickOnSubmit() {
+		page.clickOnElement(submit);
+	}
+	public void clickOnClose() {
+		page.clickOnElement(close);
+	}
+//	public void sendMessage() throws IOException {
+//		PageUtility.selectDropdownbyText(dropDown, "Aji");
+//		String Message=ExcelUtility.getString(1, 21, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
+//		PageUtility.enterText(Msg, Message);
+//		PageUtility.clickOnElement(submit);
+//		PageUtility.clickOnElement(close);
+//	}
+	
 }

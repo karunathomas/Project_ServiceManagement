@@ -1,0 +1,7 @@
+com\qa\utilities\ExtentReportUtility.class
+com\qa\utilities\WaitsUtility.class
+com\qa\utilities\FakerUtility.class
+com\qa\utilities\ScreenshotUtility.class
+constants\Constance.class
+com\qa\utilities\ExcelUtility.class
+com\qa\utilities\PageUtility.class

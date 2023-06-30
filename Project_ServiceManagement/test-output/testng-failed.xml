@@ -4,16 +4,30 @@
   <listeners>
     <listener class-name="com.qa.servicemanagementproject.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="firefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.qa.testscripts.AddClientTest">
+      <class name="com.qa.testscripts.LoginTest">
         <methods>
           <include name="browserQuit"/>
-          <include name="addClientDetails"/>
+          <include name="verifyUserisAbletoLogout"/>
           <include name="intializeBrowser"/>
+          <include name="verifyLoginCredentials"/>
         </methods>
-      </class> <!-- com.qa.testscripts.AddClientTest -->
+      </class> <!-- com.qa.testscripts.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- firefox(failed) -->
+  <test thread-count="5" name="edge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.qa.testscripts.LoginTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="verifyUserisAbletoLogout"/>
+          <include name="intializeBrowser"/>
+          <include name="verifyLoginCredentials"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.LoginTest -->
+    </classes>
+  </test> <!-- edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

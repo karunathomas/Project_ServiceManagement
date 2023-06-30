@@ -27,7 +27,7 @@ public class FakerUtility {
 		String postalcode=faker.address().countryCode();
 		return postalcode;	
 	}
-	public static String cityNam() {
+	public static String cityName() {
 		Faker faker=new Faker();
 		String city=faker.address().cityName();
 		return city;
@@ -68,6 +68,7 @@ public class FakerUtility {
 		String ssnNo=faker.idNumber().ssnValid();
 		return ssnNo;
 	}
+	
 //	public static void  dateFuture() {
 //        Faker faker = new Faker();
 //        Date dateFuture = faker.date().future(5, TimeUnit.DAYS);

@@ -16,9 +16,9 @@ public class PageUtility {
 	public static String getElementText(WebElement element) {
 		return element.getText();
 	}
-	public static WebElement enterText(WebElement element, String value) {
+	public static void enterText(WebElement element, String value) {
 		element.sendKeys(value);
-		return element;
+		//return element;
 	}
 	public static void clickAndHoldOnElement(WebDriver driver, WebElement element) {
 		Actions actions = new Actions(driver);
@@ -37,10 +37,6 @@ public class PageUtility {
 		Select selectObj = new Select(element);
 		selectObj.selectByVisibleText(Text);
 	}
-	public static void selectDropdownbyValue(WebElement element, String value) {
-		Select selectObj = new Select(element);
-		selectObj.selectByVisibleText(value);
-	}
 	public static void scrollUp(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
@@ -54,5 +50,13 @@ public class PageUtility {
 	public static void stopPageReferesh(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.stop();");
+	}
+	public static void selectElementFromListUsingGetAttribute(List<WebElement> element, String attri, String value) {
+		for(WebElement i:element) {
+			String attribute=i.getAttribute(attri);
+			if(attribute.contentEquals(value)) {
+				i.click();
+			}
+		}
 	}
 }

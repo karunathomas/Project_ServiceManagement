@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 82.012 s <<< FAILURE! - in TestSuite
+com.qa.testscripts.InventoryProductTest.deleteInventoryProducts  Time elapsed: 35.378 s  <<< FAILURE!
+java.lang.AssertionError: Test Failed expected [55] but found [55]
+	at com.qa.testscripts.InventoryProductTest.deleteInventoryProducts(InventoryProductTest.java:32)
+
