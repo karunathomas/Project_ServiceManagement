@@ -1,97 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-30T11:02:58Z" name="MyTestSuite" finished-at="2023-06-30T11:08:31Z" duration-ms="333641">
+  <suite started-at="2023-07-02T07:09:53Z" name="Suite" finished-at="2023-07-02T07:11:23Z" duration-ms="89885">
     <groups>
-      <group name="Sanity">
-        <method signature="HomePageTest.quantityAlerts()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" name="quantityAlerts" class="com.qa.testscripts.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToAddClient()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" name="verifyNavigateToAddClient" class="com.qa.testscripts.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToSendSms()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" name="verifyNavigateToSendSms" class="com.qa.testscripts.HomePageTest"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="HomePageTest.verifyNavigateToAddReparation()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" name="verifyNavigateToAddReparation" class="com.qa.testscripts.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToSendEmail()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" name="verifyNavigateToSendEmail" class="com.qa.testscripts.HomePageTest"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-06-30T11:02:58Z" name="MyTest" finished-at="2023-06-30T11:08:31Z" duration-ms="333641">
-      <class name="com.qa.testscripts.HomePageTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:02:58Z" name="intializeBrowser" finished-at="2023-06-30T11:03:57Z" duration-ms="59438" status="PASS">
+    <test started-at="2023-07-02T07:09:53Z" name="Test" finished-at="2023-07-02T07:11:23Z" duration-ms="89885">
+      <class name="com.qa.testscripts.LoginTest">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a]" started-at="2023-07-02T07:09:53Z" name="intializeBrowser" finished-at="2023-07-02T07:10:37Z" duration-ms="43692" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="quantityAlerts()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:03:57Z" name="quantityAlerts" finished-at="2023-06-30T11:04:14Z" duration-ms="16822" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quantityAlerts -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:04:14Z" name="intializeBrowser" finished-at="2023-06-30T11:04:54Z" duration-ms="39854" status="PASS">
+        <test-method signature="verifyLoginCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a]" started-at="2023-07-02T07:10:37Z" name="verifyLoginCredentials" data-provider="getDataFromDataProvider" finished-at="2023-07-02T07:10:50Z" duration-ms="13854" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginCredentials -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a]" started-at="2023-07-02T07:10:50Z" name="browserQuit" finished-at="2023-07-02T07:10:51Z" duration-ms="1066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginCredentials status=SUCCESS method=LoginTest.verifyLoginCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a]" started-at="2023-07-02T07:10:51Z" name="intializeBrowser" finished-at="2023-07-02T07:11:04Z" duration-ms="12330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToAddClient()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:04:54Z" name="verifyNavigateToAddClient" finished-at="2023-06-30T11:05:13Z" duration-ms="19740" status="PASS">
+        <test-method signature="verifyUserisAbletoLogout()[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a]" started-at="2023-07-02T07:11:04Z" name="verifyUserisAbletoLogout" finished-at="2023-07-02T07:11:22Z" duration-ms="17984" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyNavigateToAddClient -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:05:13Z" name="intializeBrowser" finished-at="2023-06-30T11:06:03Z" duration-ms="49653" status="PASS">
+        </test-method> <!-- verifyUserisAbletoLogout -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a]" started-at="2023-07-02T07:11:22Z" name="browserQuit" finished-at="2023-07-02T07:11:23Z" duration-ms="902" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[[TestResult name=verifyUserisAbletoLogout status=SUCCESS method=LoginTest.verifyUserisAbletoLogout()[pri:0, instance:com.qa.testscripts.LoginTest@4cc6fa2a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToAddReparation()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:06:03Z" name="verifyNavigateToAddReparation" finished-at="2023-06-30T11:06:14Z" duration-ms="10642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToAddReparation -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:06:14Z" name="intializeBrowser" finished-at="2023-06-30T11:07:06Z" duration-ms="51975" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToSendEmail()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:07:06Z" name="verifyNavigateToSendEmail" finished-at="2023-06-30T11:07:32Z" duration-ms="25782" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToSendEmail -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:07:32Z" name="intializeBrowser" finished-at="2023-06-30T11:08:09Z" duration-ms="37465" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToSendSms()[pri:0, instance:com.qa.testscripts.HomePageTest@590c73d3]" started-at="2023-06-30T11:08:09Z" name="verifyNavigateToSendSms" finished-at="2023-06-30T11:08:30Z" duration-ms="20708" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToSendSms -->
-      </class> <!-- com.qa.testscripts.HomePageTest -->
-    </test> <!-- MyTest -->
-  </suite> <!-- MyTestSuite -->
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.qa.testscripts.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

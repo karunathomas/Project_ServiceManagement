@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -26,6 +27,7 @@ public class Base {
 	public FileInputStream fs1, fs2;
 	public ScreenshotUtility screenshot;
 	ChromeOptions ops = new ChromeOptions();
+	EdgeOptions opt=new EdgeOptions();
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
@@ -64,8 +66,10 @@ public class Base {
 			driver = (WebDriver) new ChromeDriver(ops);
 			} 
 		else if (browser.equalsIgnoreCase("Edge")) {
+			opt.addArguments("--remote-allow-origins=*");
 			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + constants.Constance.EDGE);
-			driver = new EdgeDriver();
+			//driver = (WebDriver) new EdgeDriver(opt);
+			driver = new EdgeDriver(opt);
 			}
 		else {
 			throw new Exception("Browser is not correct");

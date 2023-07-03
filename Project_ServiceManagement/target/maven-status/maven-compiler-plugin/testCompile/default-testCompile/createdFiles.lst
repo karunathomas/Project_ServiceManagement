@@ -1,4 +1,5 @@
 com\qa\pages\LoginPage.class
+com\qa\pages\AddClient.class
 com\qa\dataproviderutility\DataProviderUtility.class
 com\qa\testscripts\HomePageTest.class
 com\qa\pages\SendSms.class
@@ -6,7 +7,6 @@ com\qa\testscripts\LoginTest.class
 obss\TestNgGoogleTest.class
 com\qa\pages\HomePage.class
 com\qa\servicemanagementproject\Listeners.class
-com\qa\pages\AddClient.class
 com\qa\testscripts\SendSmsTest.class
 com\qa\testscripts\AddClientTest.class
 com\qa\servicemanagementproject\Base.class

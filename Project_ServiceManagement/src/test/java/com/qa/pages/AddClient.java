@@ -77,8 +77,8 @@ PageUtility page=new PageUtility();
 	}
 	public void uploadFile() {
 		//WaitsUtility.waitForElement(driver, file);
-		page.enterText(file, "D:\\code.JPG");
-		//page.enterText(file, "\\src\\main\\java\\Resources\\code.JPG");
+		//page.enterText(file, "D:\\code.JPG");
+		page.enterText(file, "C:\\Users\\aser\\git\\Project_ServiceManagement\\Project_ServiceManagement\\src\\main\\java\\Resources\\code.JPG");
 	}
 	public void addComment() throws IOException {
 		String cmnt=ExcelUtility.getString(1, 19, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");

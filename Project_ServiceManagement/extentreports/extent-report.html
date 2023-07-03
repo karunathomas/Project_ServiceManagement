@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"> Extent Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 30, 2023 05:57:35 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 2, 2023 01:54:04 PM</span></a>
 </li>
 </ul>
 </div>
@@ -84,9 +84,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">deleteInventoryProducts</p>
+            <p class="name">verifyUserIsAbleToAddReperation</p>
             <p class="text-sm">
-              <span>5:58:13 PM</span> / <span>00:00:35:436</span>
+              <span>1:55:13 PM</span> / <span>00:00:26:956</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -94,10 +94,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">deleteInventoryProducts</h5>
-<span class='badge badge-success'>06.30.2023 5:58:13 PM</span>
-<span class='badge badge-danger'>06.30.2023 5:58:49 PM</span>
-<span class='badge badge-default'>00:00:35:436</span>
+<h5 class="test-status text-fail">verifyUserIsAbleToAddReperation</h5>
+<span class='badge badge-success'>07.02.2023 1:55:13 PM</span>
+<span class='badge badge-danger'>07.02.2023 1:55:40 PM</span>
+<span class='badge badge-default'>00:00:26:956</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -109,21 +109,23 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:58:49 PM</td>
+        <td>1:55:40 PM</td>
         <td>
           Test Failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:58:49 PM</td>
+        <td>1:55:40 PM</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Test Failed expected [55] but found [55]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at com.qa.testscripts.InventoryProductTest.deleteInventoryProducts(InventoryProductTest.java:32)
+          <textarea readonly class="code-block">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "span"
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'KARUNA-TEMP85', ip: '192.168.98.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:49)
+	at com.qa.utilities.PageUtility.selectDropdownbyText(PageUtility.java:37)
+	at com.qa.pages.AddReparation.selectAsignee(AddReparation.java:105)
+	at com.qa.testscripts.AddReperationTest.verifyUserIsAbleToAddReperation(AddReperationTest.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,12 +186,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.support.ui.UnexpectedTagNameException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.support.ui.UnexpectedTagNameException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -203,9 +205,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:58:13 PM</td>
+<td>13:55:13 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>deleteInventoryProducts</a>
+<a href="#" class="linked" test-id='1' id='1'>verifyUserIsAbleToAddReperation</a>
 </td>
 </tr>
 </tbody>
@@ -225,13 +227,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 30, 2023 05:57:35 PM</h3>
+<h3>Jul 2, 2023 01:54:04 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 30, 2023 05:58:51 PM</h3>
+<h3>Jul 2, 2023 01:55:44 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -301,7 +303,7 @@
 </div></div>
 <script>
 var timeline = {
-"deleteInventoryProducts":35.436
+"verifyUserIsAbleToAddReperation":26.956
 };
 </script>
 <div class="row">

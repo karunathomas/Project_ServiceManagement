@@ -27,7 +27,7 @@ public class InventoryProductTest extends Base {
 		inventory.clickOnDelete();
 		inventory.clickOnConfirmation();
 		String countAfterDeletion=inventory.getInventoryCount();
-		int count=inventory.getAfterDeletionCount();
+		//int count=inventory.getAfterDeletionCount();
 		//String actualCount=String.valueOf(count);
 		Assert.assertEquals(countAfterDeletion, expectedCountAfterDelete,"Test Failed");
 	}

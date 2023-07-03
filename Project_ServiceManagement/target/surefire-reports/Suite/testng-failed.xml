@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.testscripts.InventoryProductTest">
+      <class name="com.qa.testscripts.AddReperationTest">
         <methods>
           <include name="browserQuit"/>
-          <include name="deleteInventoryProducts"/>
+          <include name="verifyUserIsAbleToAddReperation"/>
           <include name="intializeBrowser"/>
         </methods>
-      </class> <!-- com.qa.testscripts.InventoryProductTest -->
+      </class> <!-- com.qa.testscripts.AddReperationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

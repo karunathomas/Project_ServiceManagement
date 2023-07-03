@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-30T12:27:35Z" name="Suite" finished-at="2023-06-30T12:28:50Z" duration-ms="75250">
+  <suite started-at="2023-07-02T08:24:05Z" name="Suite" finished-at="2023-07-02T08:25:43Z" duration-ms="98139">
     <groups>
     </groups>
-    <test started-at="2023-06-30T12:27:35Z" name="Test" finished-at="2023-06-30T12:28:50Z" duration-ms="75250">
-      <class name="com.qa.testscripts.InventoryProductTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.InventoryProductTest@24b6b8f6]" started-at="2023-06-30T12:27:35Z" name="intializeBrowser" finished-at="2023-06-30T12:28:13Z" duration-ms="38186" status="PASS">
+    <test started-at="2023-07-02T08:24:05Z" name="Test" finished-at="2023-07-02T08:25:43Z" duration-ms="98139">
+      <class name="com.qa.testscripts.AddReperationTest">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddReperationTest@53812a9b]" started-at="2023-07-02T08:24:05Z" name="intializeBrowser" finished-at="2023-07-02T08:25:13Z" duration-ms="68822" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,18 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="deleteInventoryProducts()[pri:0, instance:com.qa.testscripts.InventoryProductTest@24b6b8f6]" started-at="2023-06-30T12:28:13Z" name="deleteInventoryProducts" finished-at="2023-06-30T12:28:49Z" duration-ms="35418" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyUserIsAbleToAddReperation()[pri:0, instance:com.qa.testscripts.AddReperationTest@53812a9b]" started-at="2023-07-02T08:25:13Z" name="verifyUserIsAbleToAddReperation" finished-at="2023-07-02T08:25:40Z" duration-ms="26953" status="FAIL">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
             <message>
-              <![CDATA[Test Failed expected [55] but found [55]]]>
+              <![CDATA[Element should have been "select" but was "span"
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'KARUNA-TEMP85', ip: '192.168.98.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test Failed expected [55] but found [55]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at com.qa.testscripts.InventoryProductTest.deleteInventoryProducts(InventoryProductTest.java:32)
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "span"
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'KARUNA-TEMP85', ip: '192.168.98.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:49)
+at com.qa.utilities.PageUtility.selectDropdownbyText(PageUtility.java:37)
+at com.qa.pages.AddReparation.selectAsignee(AddReparation.java:105)
+at com.qa.testscripts.AddReperationTest.verifyUserIsAbleToAddReperation(AddReperationTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,22 +66,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteInventoryProducts -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.InventoryProductTest@24b6b8f6]" started-at="2023-06-30T12:28:49Z" name="browserQuit" finished-at="2023-06-30T12:28:50Z" duration-ms="1546" status="PASS">
+        </test-method> <!-- verifyUserIsAbleToAddReperation -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddReperationTest@53812a9b]" started-at="2023-07-02T08:25:40Z" name="browserQuit" finished-at="2023-07-02T08:25:43Z" duration-ms="2241" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteInventoryProducts status=FAILURE method=InventoryProductTest.deleteInventoryProducts()[pri:0, instance:com.qa.testscripts.InventoryProductTest@24b6b8f6] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToAddReperation status=FAILURE method=AddReperationTest.verifyUserIsAbleToAddReperation()[pri:0, instance:com.qa.testscripts.AddReperationTest@53812a9b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.InventoryProductTest -->
+      </class> <!-- com.qa.testscripts.AddReperationTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

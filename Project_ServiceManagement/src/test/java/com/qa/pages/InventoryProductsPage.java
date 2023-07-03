@@ -50,6 +50,7 @@ public class InventoryProductsPage {
 			return page.getElementText(inventoryCount);
 		}
 		public int getExpectedInventoryCount() {
+			WaitsUtility.waitForElement(driver, inventoryCount);
 			String count=page.getElementText(inventoryCount);
 			int value=Integer.parseInt(count);
 			int expectedcount=value-1;
