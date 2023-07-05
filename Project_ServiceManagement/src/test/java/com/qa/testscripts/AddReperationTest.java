@@ -2,6 +2,7 @@ package com.qa.testscripts;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.pages.AddReparation;
@@ -27,11 +28,15 @@ public class AddReperationTest extends Base{
 		reperation=new AddReparation(driver);
 		reperation.enterImei();
 		reperation.selectClient();
-//		reperation.selectAsignee();
-//		reperation.enterServiceCharge();
-//		reperation.enterModel();
-//		reperation.enterDefect();
-//		reperation.clickAddReperationButton();
+		reperation.selectAsignee();
+		reperation.enterManufacturer();
+		reperation.enterServiceCharge();
+		reperation.enterModel();
+		reperation.enterDefect();
+		reperation.clickAddReperationButton();
+		String expectedMessage=ExcelUtility.getString(1, 5, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
+		String actualMessage=reperation.getAddReperationHead();
+		Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
 	}
 
 }

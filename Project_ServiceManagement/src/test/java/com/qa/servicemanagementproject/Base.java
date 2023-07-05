@@ -69,7 +69,7 @@ public class Base {
 			opt.addArguments("--remote-allow-origins=*");
 			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + constants.Constance.EDGE);
 			//driver = (WebDriver) new EdgeDriver(opt);
-			driver = new EdgeDriver(opt);
+			driver = (WebDriver) new EdgeDriver(opt);
 			}
 		else {
 			throw new Exception("Browser is not correct");

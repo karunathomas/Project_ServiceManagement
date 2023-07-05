@@ -14,17 +14,6 @@ public class LoginTest extends Base{
 	LoginPage loginpage;
 	
 	
-//	@Test
-//	public void verifyUserIsAbleToLoginWithValidCredentails() throws IOException {
-//		loginpage=new LoginPage(driver);
-//		loginpage.enterUserName(ExcelUtility.getString(1, 0, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet"));
-//		loginpage.enterPassword(ExcelUtility.getString(1, 1, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet"));
-//		loginpage.clickSubmit();
-//		
-//		String expectedMessage=ExcelUtility.getString(1, 2, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
-//		String actualMessage=loginpage.getAlertMessage();
-//		Assert.assertEquals(actualMessage, expectedMessage, "Login Failed");
-//	}
 	@Test(dataProvider="getDataFromDataProvider", dataProviderClass=DataProviderUtility.class)
 	public void verifyLoginCredentials(String uName, String pw) throws IOException {
 		loginpage=new LoginPage(driver);

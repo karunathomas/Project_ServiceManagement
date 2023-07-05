@@ -38,6 +38,10 @@ public class AddClientTest extends Base{
 		addclientdata.uploadFile();
 		addclientdata.addComment();
 		addclientdata.clickSubmit();
+		
+		String expectedMessage=ExcelUtility.getString(1, 4, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
+		String actualMessage=addclientdata.getAddClientTitle();
+		Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
 	}
 	@Test
 	public void addClientDetailsWithoutClientName() throws IOException {

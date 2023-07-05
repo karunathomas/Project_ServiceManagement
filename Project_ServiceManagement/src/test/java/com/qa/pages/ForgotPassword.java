@@ -22,6 +22,7 @@ public class ForgotPassword {
 	@FindBy(xpath="//input[@class='btn btn-primary btn-block btn-flat']")WebElement submit;
 	@FindBy(xpath="//a[text()=' ← Back to login!']")WebElement backlogin;
 	@FindBy(xpath="//a[text()='Forgot your password?']")WebElement forgotlink;
+	@FindBy(xpath="//small[text()='Please enter your email so we can send you an email to reset your password.']")WebElement forgotmsg;
 	@FindBy(xpath="//p[text()='The Email Address field must contain a valid email address.']")WebElement mailMsg;
 	
 	public void enterEmail() throws IOException {

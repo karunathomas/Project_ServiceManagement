@@ -43,6 +43,7 @@ public class HomePage {
 		page.clickOnElement(addClient);
 	}
 	public String addClientMessage() {
+		WaitsUtility.waitForElement(driver, message);
 		return page.getElementText(message);
 	}
 	public void clickOnReparation() {

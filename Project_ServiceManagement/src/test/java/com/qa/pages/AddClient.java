@@ -20,6 +20,7 @@ PageUtility page=new PageUtility();
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
+	@FindBy(xpath="//h4[text()='Add Client']")WebElement message;
 	@FindBy(xpath="//input[@id='name1']") WebElement cname;
 	@FindBy(xpath="//input[@id='company1']") WebElement compname;
 	@FindBy(xpath="//input[@id='autocomplete']") WebElement location;
@@ -90,7 +91,9 @@ PageUtility page=new PageUtility();
 	public String getWarningMessage() {
 		return page.getElementText(warning);
 	}
-	
+	public String getAddClientTitle() {
+		return page.getElementText(message);
+	}
 //	public void addData() throws IOException {
 //		String clientname=ExcelUtility.getString(1, 9, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
 //		String companyname=ExcelUtility.getString(1, 10, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");

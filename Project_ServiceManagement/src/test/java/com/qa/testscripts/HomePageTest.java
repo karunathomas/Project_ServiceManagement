@@ -66,7 +66,7 @@ public class HomePageTest extends Base {
 		
 	}
 	@Test(groups="Sanity")
-	public void quantityAlerts() throws IOException {
+	public void verifyNavigateToQuantityAlerts() throws IOException {
 		homepage=new HomePage(driver);
 		loginpage=new LoginPage(driver);
 		loginpage.enterUserName(ExcelUtility.getString(1, 0, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet"));

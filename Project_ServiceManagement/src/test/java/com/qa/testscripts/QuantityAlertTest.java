@@ -2,6 +2,7 @@ package com.qa.testscripts;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.pages.HomePage;
@@ -26,5 +27,8 @@ public class QuantityAlertTest extends Base {
 		homepage.clickonQuantityAlertsNumber();
 		qalert=new QuantityAlerts(driver);
 		qalert.noOfData();
+		String expectedMessage=ExcelUtility.getString(1, 8, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
+		String actualMessage=qalert.getHead();
+		Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
 	}
 }

@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.testscripts.AddReperationTest">
+      <class name="com.qa.testscripts.ForgotPassWordTest">
         <methods>
           <include name="browserQuit"/>
-          <include name="verifyUserIsAbleToAddReperation"/>
+          <include name="verifyUserIsAbleToChangePassword"/>
           <include name="intializeBrowser"/>
         </methods>
-      </class> <!-- com.qa.testscripts.AddReperationTest -->
+      </class> <!-- com.qa.testscripts.ForgotPassWordTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

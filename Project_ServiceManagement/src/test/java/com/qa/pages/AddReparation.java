@@ -25,16 +25,25 @@ public class AddReparation {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-	@FindBy(xpath = "//input[@id='imei']") WebElement imeino;
-	@FindBy(xpath = "(//span[@class='select2-selection__placeholder'])[1]")WebElement click;
-	//@FindBy(xpath = "(//span[@class='select2-selection select2-selection--single'])[1]")
-	//WebElement selectclient;
-	@FindBy(xpath = "(//input[@class='select2-search__field'])[2]")WebElement clienttextbox;
-	//@FindBy(xpath = "(//span[@class='select2-selection__arrow'])[1]")WebElement clientselect;
-	@FindBy(xpath = "//ul[@id='select2-client_name-results']")WebElement clientselect;
+	@FindBy(xpath="//h4[text()='Add Reparation']")WebElement addRepMsg;
+	@FindBy(xpath = "//input[@id='imei']")
+	WebElement imeino;
+	@FindBy(xpath = "(//span[@class='select2-selection__placeholder'])[1]")
+	WebElement click;
+	@FindBy(xpath = "(//input[@class='select2-search__field'])[2]")
+	WebElement clienttextbox;
+	@FindBy(xpath = "//ul[@id='select2-client_name-results']")
+	WebElement clientselect;
 	@FindBy(xpath = "//li[@id='select2-client_name-result-50yr-74']")
 	WebElement client;
+	@FindBy(xpath = "//span[@id='select2-assigned_to-container']")
+	WebElement asigneeclick;
+	@FindBy(xpath = "(//input[@class='select2-search__field'])[2]")
+	WebElement asigneetextbox;
+	@FindBy(xpath = "//ul[@id='select2-assigned_to-results']")
+	WebElement selectasignee;
+	@FindBy(xpath = "//li[@id='select2-assigned_to-result-eeiu-1']")
+	WebElement asignee;
 	@FindBy(xpath = "//input[@id='category']")
 	WebElement category;
 	@FindBy(xpath = "//span[@id='select2-potax2-container']")
@@ -42,7 +51,7 @@ public class AddReparation {
 	@FindBy(xpath = "(//span[text()='Please Select' and @class='select2-selection__placeholder'])[2]")
 	WebElement assignedto;
 	@FindBy(xpath = "//input[@id='reparation_manufacturer']")
-	WebElement manufact;
+	WebElement manufacturer;
 	@FindBy(xpath = "//input[@id='reparation_model']")
 	WebElement model;
 	@FindBy(xpath = "//input[@id='add_item']")
@@ -90,7 +99,8 @@ public class AddReparation {
 
 	public void enterImei() throws IOException {
 		WaitsUtility.waitForElement(driver, imeino);
-		String Imei = ExcelUtility.getString(1, 25, System.getProperty("user.dir") + constants.Constance.TESTDATAFILE, "testSheet");
+		String Imei = ExcelUtility.getString(1, 25, System.getProperty("user.dir") + constants.Constance.TESTDATAFILE,
+				"testSheet");
 		page.enterText(imeino, Imei);
 	}
 
@@ -98,27 +108,36 @@ public class AddReparation {
 		page.clickOnElement(click);
 		page.enterText(clienttextbox, "Name1 abcd - ");
 		page.clickOnElement(clientselect);
-		//page.clickOnElement(client);
+		// page.clickOnElement(client);
 	}
 
 	public void selectAsignee() {
-		page.selectDropdownbyText(assignedto, "Joe Jacobs");
+		page.clickOnElement(asigneeclick);
+		page.enterText(asigneetextbox, "Joe Jacobs");
+		page.clickOnElement(selectasignee);
+		// page.selectDropdownbyText(assignedto, "Joe Jacobs");
+	}
+
+	public void enterManufacturer() throws IOException {
+		String manufact = ExcelUtility.getString(1, 26,
+				System.getProperty("user.dir") + constants.Constance.TESTDATAFILE, "testSheet");
+		page.enterText(manufacturer, manufact);
 	}
 
 	public void enterServiceCharge() throws IOException {
-		String charge = ExcelUtility.getNumeric(1, 26,
+		String charge = ExcelUtility.getNumeric(1, 27,
 				System.getProperty("user.dir") + constants.Constance.TESTDATAFILE, "testSheet");
 		page.enterText(servicecharge, charge);
 	}
 
 	public void enterModel() throws IOException {
-		String modelName = ExcelUtility.getNumeric(1, 27,
+		String modelName = ExcelUtility.getString(1, 28,
 				System.getProperty("user.dir") + constants.Constance.TESTDATAFILE, "testSheet");
 		page.enterText(model, modelName);
 	}
 
 	public void enterDefect() throws IOException {
-		String defectname = ExcelUtility.getNumeric(1, 28,
+		String defectname = ExcelUtility.getString(1, 29,
 				System.getProperty("user.dir") + constants.Constance.TESTDATAFILE, "testSheet");
 		page.enterText(defect, defectname);
 	}
@@ -126,22 +145,24 @@ public class AddReparation {
 	public void clickAddReperationButton() {
 		page.clickOnElement(repairsubmit);
 	}
-
-	public void fileUpload(WebDriver driver, WebElement element, String location) throws AWTException {
-		Robot obj = new Robot();
-		Actions obj1 = new Actions(driver);
-		obj1.moveToElement(element).click().perform();
-		StringSelection ss = new StringSelection(location);
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		obj.delay(500);
-		obj.keyPress(KeyEvent.VK_CONTROL);
-		obj.keyPress(KeyEvent.VK_V);
-		obj.delay(500);
-		obj.keyRelease(KeyEvent.VK_CONTROL);
-		obj.keyRelease(KeyEvent.VK_V);
-		obj.delay(500);
-		obj.keyPress(KeyEvent.VK_ENTER);
-		obj.keyRelease(KeyEvent.VK_ENTER);
-		obj.delay(500);
+	public String getAddReperationHead() {
+		return page.getElementText(addRepMsg);
 	}
+//	public void fileUpload(WebDriver driver, WebElement element, String location) throws AWTException {
+//		Robot obj = new Robot();
+//		Actions obj1 = new Actions(driver);
+//		obj1.moveToElement(element).click().perform();
+//		StringSelection ss = new StringSelection(location);
+//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+//		obj.delay(500);
+//		obj.keyPress(KeyEvent.VK_CONTROL);
+//		obj.keyPress(KeyEvent.VK_V);
+//		obj.delay(500);
+//		obj.keyRelease(KeyEvent.VK_CONTROL);
+//		obj.keyRelease(KeyEvent.VK_V);
+//		obj.delay(500);
+//		obj.keyPress(KeyEvent.VK_ENTER);
+//		obj.keyRelease(KeyEvent.VK_ENTER);
+//		obj.delay(500);
+//	}
 }

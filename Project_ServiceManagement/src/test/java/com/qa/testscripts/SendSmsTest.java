@@ -2,6 +2,7 @@ package com.qa.testscripts;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.pages.HomePage;

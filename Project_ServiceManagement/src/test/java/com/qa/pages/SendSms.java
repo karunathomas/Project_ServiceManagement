@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.qa.utilities.ExcelUtility;
 import com.qa.utilities.FakerUtility;
 import com.qa.utilities.PageUtility;
+import com.qa.utilities.WaitsUtility;
 
 public class SendSms {
 public WebDriver driver;
@@ -19,13 +20,15 @@ PageUtility page;
 	this.driver=driver;
 	PageFactory.initElements(driver,this);
 	}
+	@FindBy(xpath="//h5[text()='Send SMS']")WebElement sendSMSMsg;
 	@FindBy(xpath="//select[@name='client_id']")WebElement dropDown;
 	@FindBy(xpath="(//textarea[@id='fastsms'])[3]")WebElement Msg;
 	@FindBy(xpath="//button[@value='Submit']")WebElement submit;
 	@FindBy(xpath="(//button[text()='Close'])[1]")WebElement close;
 	
+	
 	public void verifyUserIsAbleToSelectRecepientName() {
-		page.selectDropdownbyText(dropDown, "Aji");
+		page.selectDropdownbyText(dropDown, "Kiran");
 	}
 	
 	public void verifyUserIsAbleToEnterMessage() throws IOException {
@@ -38,12 +41,5 @@ PageUtility page;
 	public void clickOnClose() {
 		page.clickOnElement(close);
 	}
-//	public void sendMessage() throws IOException {
-//		PageUtility.selectDropdownbyText(dropDown, "Aji");
-//		String Message=ExcelUtility.getString(1, 21, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");
-//		PageUtility.enterText(Msg, Message);
-//		PageUtility.clickOnElement(submit);
-//		PageUtility.clickOnElement(close);
-//	}
 	
 }
