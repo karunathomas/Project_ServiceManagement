@@ -11,12 +11,12 @@
 <!--			<class name="com.qa.testscripts.AddClientTest" />-->
 <!--			<class name="com.qa.testscripts.SendSmsTest" />-->
 <!--			<class name="com.qa.testscripts.SendEmailTest" />-->
-			<class name="com.qa.testscripts.LoginTest" />
+<!--			<class name="com.qa.testscripts.LoginTest" />-->
 <!--			<class name="obss.TestNgGoogleTest" />-->
 <!--			<class name="com.qa.testscripts.QuantityAlertTest" />-->
 <!--			<class name="com.qa.testscripts.InventoryProductTest" />-->
 <!--			<class name="com.qa.testscripts.QuickEmailTest" />-->
-<!--			<class name="com.qa.testscripts.QuickSmsTest" />-->
+			<class name="com.qa.testscripts.QuickSmsTest" />
 <!--			<class name="com.qa.testscripts.AddReperationTest" />-->
 <!--			<class name="com.qa.testscripts.ForgotPassWordTest" />-->
 		</classes>
