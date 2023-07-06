@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.qa.servicemanagementproject.Listeners"/>
   </listeners>
-  <test thread-count="5" name="EdgeTest(failed)">
-    <parameter name="browser" value="Edge"/>
+  <test thread-count="2" parallel="classes" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.testscripts.LoginTest">
+      <class name="com.qa.testscripts.SendSmsTest">
         <methods>
           <include name="browserQuit"/>
-          <include name="verifyUserisAbletoLogout"/>
+          <include name="sendingSms"/>
           <include name="intializeBrowser"/>
-          <include name="verifyLoginCredentials"/>
         </methods>
-      </class> <!-- com.qa.testscripts.LoginTest -->
+      </class> <!-- com.qa.testscripts.SendSmsTest -->
+      <class name="com.qa.testscripts.AddClientTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="verifyUserAbletoAddClientDetails"/>
+          <include name="intializeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.AddClientTest -->
     </classes>
-  </test> <!-- EdgeTest(failed) -->
-</suite> <!-- Failed suite [MyTestSuite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

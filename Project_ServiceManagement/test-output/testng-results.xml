@@ -1,210 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T14:16:10Z" name="Suite" finished-at="2023-07-05T14:23:07Z" duration-ms="416923">
+  <suite started-at="2023-07-06T10:38:37Z" name="Suite" finished-at="2023-07-06T10:40:16Z" duration-ms="99132">
     <groups>
-      <group name="Sanity">
-        <method signature="HomePageTest.verifyNavigateToAddClient()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" name="verifyNavigateToAddClient" class="com.qa.testscripts.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToQuantityAlerts()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" name="verifyNavigateToQuantityAlerts" class="com.qa.testscripts.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToSendSms()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" name="verifyNavigateToSendSms" class="com.qa.testscripts.HomePageTest"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="HomePageTest.verifyNavigateToAddReparation()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" name="verifyNavigateToAddReparation" class="com.qa.testscripts.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToSendEmail()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" name="verifyNavigateToSendEmail" class="com.qa.testscripts.HomePageTest"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-07-05T14:16:10Z" name="Test" finished-at="2023-07-05T14:23:07Z" duration-ms="416923">
-      <class name="com.qa.testscripts.AddReperationTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddReperationTest@41925502]" started-at="2023-07-05T14:19:14Z" name="intializeBrowser" finished-at="2023-07-05T14:19:29Z" duration-ms="15246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserIsAbleToAddReperation()[pri:0, instance:com.qa.testscripts.AddReperationTest@41925502]" started-at="2023-07-05T14:19:29Z" name="verifyUserIsAbleToAddReperation" finished-at="2023-07-05T14:19:40Z" duration-ms="11208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToAddReperation -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddReperationTest@41925502]" started-at="2023-07-05T14:19:40Z" name="browserQuit" finished-at="2023-07-05T14:19:41Z" duration-ms="915" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToAddReperation status=SUCCESS method=AddReperationTest.verifyUserIsAbleToAddReperation()[pri:0, instance:com.qa.testscripts.AddReperationTest@41925502] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.AddReperationTest -->
-      <class name="com.qa.testscripts.QuickEmailTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.QuickEmailTest@12bfd80d]" started-at="2023-07-05T14:22:39Z" name="intializeBrowser" finished-at="2023-07-05T14:22:54Z" duration-ms="15094" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserIsAbleToSendQuickEmail()[pri:0, instance:com.qa.testscripts.QuickEmailTest@12bfd80d]" started-at="2023-07-05T14:22:54Z" name="verifyUserIsAbleToSendQuickEmail" finished-at="2023-07-05T14:23:02Z" duration-ms="8479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToSendQuickEmail -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.QuickEmailTest@12bfd80d]" started-at="2023-07-05T14:23:02Z" name="browserQuit" finished-at="2023-07-05T14:23:07Z" duration-ms="4797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToSendQuickEmail status=SUCCESS method=QuickEmailTest.verifyUserIsAbleToSendQuickEmail()[pri:0, instance:com.qa.testscripts.QuickEmailTest@12bfd80d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.QuickEmailTest -->
-      <class name="com.qa.testscripts.HomePageTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:16:10Z" name="intializeBrowser" finished-at="2023-07-05T14:16:51Z" duration-ms="40438" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToAddClient()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:16:51Z" name="verifyNavigateToAddClient" finished-at="2023-07-05T14:17:32Z" duration-ms="41432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToAddClient -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:17:32Z" name="browserQuit" finished-at="2023-07-05T14:17:33Z" duration-ms="1120" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNavigateToAddClient status=SUCCESS method=HomePageTest.verifyNavigateToAddClient()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:17:33Z" name="intializeBrowser" finished-at="2023-07-05T14:17:48Z" duration-ms="14291" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToAddReparation()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:17:48Z" name="verifyNavigateToAddReparation" finished-at="2023-07-05T14:17:56Z" duration-ms="8354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToAddReparation -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:17:56Z" name="browserQuit" finished-at="2023-07-05T14:17:57Z" duration-ms="821" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNavigateToAddReparation status=SUCCESS method=HomePageTest.verifyNavigateToAddReparation()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:17:57Z" name="intializeBrowser" finished-at="2023-07-05T14:18:16Z" duration-ms="19139" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToQuantityAlerts()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:18:16Z" name="verifyNavigateToQuantityAlerts" finished-at="2023-07-05T14:18:25Z" duration-ms="9255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToQuantityAlerts -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:18:25Z" name="browserQuit" finished-at="2023-07-05T14:18:26Z" duration-ms="889" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNavigateToQuantityAlerts status=SUCCESS method=HomePageTest.verifyNavigateToQuantityAlerts()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:18:26Z" name="intializeBrowser" finished-at="2023-07-05T14:18:40Z" duration-ms="13984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToSendEmail()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:18:40Z" name="verifyNavigateToSendEmail" finished-at="2023-07-05T14:18:52Z" duration-ms="12323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToSendEmail -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:18:52Z" name="browserQuit" finished-at="2023-07-05T14:18:53Z" duration-ms="917" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNavigateToSendEmail status=SUCCESS method=HomePageTest.verifyNavigateToSendEmail()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:18:53Z" name="intializeBrowser" finished-at="2023-07-05T14:19:04Z" duration-ms="10950" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyNavigateToSendSms()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:19:04Z" name="verifyNavigateToSendSms" finished-at="2023-07-05T14:19:13Z" duration-ms="8743" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToSendSms -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1]" started-at="2023-07-05T14:19:13Z" name="browserQuit" finished-at="2023-07-05T14:19:14Z" duration-ms="912" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNavigateToSendSms status=SUCCESS method=HomePageTest.verifyNavigateToSendSms()[pri:0, instance:com.qa.testscripts.HomePageTest@16ecee1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.HomePageTest -->
+    <test started-at="2023-07-06T10:38:37Z" name="Test1" finished-at="2023-07-06T10:40:16Z" duration-ms="99132">
       <class name="com.qa.testscripts.AddClientTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb]" started-at="2023-07-05T14:19:41Z" name="intializeBrowser" finished-at="2023-07-05T14:19:55Z" duration-ms="13755" status="PASS">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:38:37Z" name="intializeBrowser" finished-at="2023-07-06T10:39:06Z" duration-ms="28676" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="addClientDetailsWithoutClientName()[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb]" started-at="2023-07-05T14:19:55Z" name="addClientDetailsWithoutClientName" finished-at="2023-07-05T14:20:05Z" duration-ms="10478" status="PASS">
+        <test-method signature="addClientDetailsWithoutClientName()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:39:06Z" name="addClientDetailsWithoutClientName" finished-at="2023-07-06T10:39:22Z" duration-ms="15890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addClientDetailsWithoutClientName -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb]" started-at="2023-07-05T14:20:05Z" name="browserQuit" finished-at="2023-07-05T14:20:06Z" duration-ms="1012" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:39:22Z" name="browserQuit" finished-at="2023-07-06T10:39:33Z" duration-ms="11604" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addClientDetailsWithoutClientName status=SUCCESS method=AddClientTest.addClientDetailsWithoutClientName()[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb] output={null}]]]>
+                <![CDATA[[TestResult name=addClientDetailsWithoutClientName status=SUCCESS method=AddClientTest.addClientDetailsWithoutClientName()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb]" started-at="2023-07-05T14:20:06Z" name="intializeBrowser" finished-at="2023-07-05T14:20:28Z" duration-ms="21059" status="PASS">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:39:33Z" name="intializeBrowser" finished-at="2023-07-06T10:40:01Z" duration-ms="27258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -241,15 +44,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserAbletoAddClientDetails()[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb]" started-at="2023-07-05T14:20:28Z" name="verifyUserAbletoAddClientDetails" finished-at="2023-07-05T14:20:42Z" duration-ms="14034" status="PASS">
+        <test-method signature="verifyUserAbletoAddClientDetails()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:40:01Z" name="verifyUserAbletoAddClientDetails" finished-at="2023-07-06T10:40:14Z" duration-ms="13758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserAbletoAddClientDetails -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb]" started-at="2023-07-05T14:20:42Z" name="browserQuit" finished-at="2023-07-05T14:20:43Z" duration-ms="1284" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:40:14Z" name="browserQuit" finished-at="2023-07-06T10:40:16Z" duration-ms="1884" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserAbletoAddClientDetails status=SUCCESS method=AddClientTest.verifyUserAbletoAddClientDetails()[pri:0, instance:com.qa.testscripts.AddClientTest@3b220bcb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserAbletoAddClientDetails status=SUCCESS method=AddClientTest.verifyUserAbletoAddClientDetails()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -257,36 +60,8 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.qa.testscripts.AddClientTest -->
-      <class name="com.qa.testscripts.QuantityAlertTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.QuantityAlertTest@160ac7fb]" started-at="2023-07-05T14:22:15Z" name="intializeBrowser" finished-at="2023-07-05T14:22:29Z" duration-ms="13507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="checkNoOfData()[pri:0, instance:com.qa.testscripts.QuantityAlertTest@160ac7fb]" started-at="2023-07-05T14:22:29Z" name="checkNoOfData" finished-at="2023-07-05T14:22:38Z" duration-ms="8932" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkNoOfData -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.QuantityAlertTest@160ac7fb]" started-at="2023-07-05T14:22:38Z" name="browserQuit" finished-at="2023-07-05T14:22:39Z" duration-ms="876" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkNoOfData status=SUCCESS method=QuantityAlertTest.checkNoOfData()[pri:0, instance:com.qa.testscripts.QuantityAlertTest@160ac7fb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.QuantityAlertTest -->
       <class name="com.qa.testscripts.SendSmsTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.SendSmsTest@2b95e48b]" started-at="2023-07-05T14:21:01Z" name="intializeBrowser" finished-at="2023-07-05T14:21:11Z" duration-ms="9760" status="PASS">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66]" started-at="2023-07-06T10:38:37Z" name="intializeBrowser" finished-at="2023-07-06T10:39:05Z" duration-ms="27256" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,15 +72,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="sendingSms()[pri:0, instance:com.qa.testscripts.SendSmsTest@2b95e48b]" started-at="2023-07-05T14:21:11Z" name="sendingSms" finished-at="2023-07-05T14:21:17Z" duration-ms="6550" status="PASS">
+        <test-method signature="sendingSms()[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66]" started-at="2023-07-06T10:39:05Z" name="sendingSms" finished-at="2023-07-06T10:39:21Z" duration-ms="16506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendingSms -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.SendSmsTest@2b95e48b]" started-at="2023-07-05T14:21:17Z" name="browserQuit" finished-at="2023-07-05T14:21:18Z" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66]" started-at="2023-07-06T10:39:21Z" name="browserQuit" finished-at="2023-07-06T10:39:33Z" duration-ms="11979" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sendingSms status=SUCCESS method=SendSmsTest.sendingSms()[pri:0, instance:com.qa.testscripts.SendSmsTest@2b95e48b] output={null}]]]>
+                <![CDATA[[TestResult name=sendingSms status=SUCCESS method=SendSmsTest.sendingSms()[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66] output={null}]]]>
               </value>
             </param>
           </params>
@@ -313,128 +88,6 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.qa.testscripts.SendSmsTest -->
-      <class name="com.qa.testscripts.LoginTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8]" started-at="2023-07-05T14:21:38Z" name="intializeBrowser" finished-at="2023-07-05T14:21:49Z" duration-ms="11553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyLoginCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8]" started-at="2023-07-05T14:21:49Z" name="verifyLoginCredentials" data-provider="getDataFromDataProvider" finished-at="2023-07-05T14:21:55Z" duration-ms="5750" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@admin.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8]" started-at="2023-07-05T14:21:55Z" name="browserQuit" finished-at="2023-07-05T14:21:56Z" duration-ms="1109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginCredentials status=SUCCESS method=LoginTest.verifyLoginCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8]" started-at="2023-07-05T14:21:56Z" name="intializeBrowser" finished-at="2023-07-05T14:22:06Z" duration-ms="10481" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserisAbletoLogout()[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8]" started-at="2023-07-05T14:22:06Z" name="verifyUserisAbletoLogout" finished-at="2023-07-05T14:22:14Z" duration-ms="8048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserisAbletoLogout -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8]" started-at="2023-07-05T14:22:14Z" name="browserQuit" finished-at="2023-07-05T14:22:15Z" duration-ms="967" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserisAbletoLogout status=SUCCESS method=LoginTest.verifyUserisAbletoLogout()[pri:0, instance:com.qa.testscripts.LoginTest@3dddefd8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.LoginTest -->
-      <class name="com.qa.testscripts.ForgotPassWordTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@13e3c1c7]" started-at="2023-07-05T14:20:43Z" name="intializeBrowser" finished-at="2023-07-05T14:20:55Z" duration-ms="12318" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserIsAbleToChangePassword()[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@13e3c1c7]" started-at="2023-07-05T14:20:55Z" name="verifyUserIsAbleToChangePassword" finished-at="2023-07-05T14:21:00Z" duration-ms="4655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToChangePassword -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@13e3c1c7]" started-at="2023-07-05T14:21:00Z" name="browserQuit" finished-at="2023-07-05T14:21:01Z" duration-ms="958" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToChangePassword status=SUCCESS method=ForgotPassWordTest.verifyUserIsAbleToChangePassword()[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@13e3c1c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.ForgotPassWordTest -->
-      <class name="com.qa.testscripts.SendEmailTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.SendEmailTest@4a3329b9]" started-at="2023-07-05T14:21:18Z" name="intializeBrowser" finished-at="2023-07-05T14:21:30Z" duration-ms="11716" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserIsAbleToSendingEmail()[pri:0, instance:com.qa.testscripts.SendEmailTest@4a3329b9]" started-at="2023-07-05T14:21:30Z" name="verifyUserIsAbleToSendingEmail" finished-at="2023-07-05T14:21:37Z" duration-ms="6895" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToSendingEmail -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.SendEmailTest@4a3329b9]" started-at="2023-07-05T14:21:37Z" name="browserQuit" finished-at="2023-07-05T14:21:38Z" duration-ms="943" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToSendingEmail status=SUCCESS method=SendEmailTest.verifyUserIsAbleToSendingEmail()[pri:0, instance:com.qa.testscripts.SendEmailTest@4a3329b9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.SendEmailTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

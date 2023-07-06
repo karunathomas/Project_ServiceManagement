@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T13:53:20Z" name="Suite" finished-at="2023-07-05T13:55:22Z" duration-ms="121914">
+  <suite started-at="2023-07-06T09:39:25Z" name="Suite" finished-at="2023-07-06T09:41:43Z" duration-ms="137635">
     <groups>
     </groups>
-    <test started-at="2023-07-05T13:53:20Z" name="Test" finished-at="2023-07-05T13:55:22Z" duration-ms="121914">
-      <class name="com.qa.testscripts.ForgotPassWordTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@53812a9b]" started-at="2023-07-05T13:53:21Z" name="intializeBrowser" finished-at="2023-07-05T13:54:36Z" duration-ms="75032" status="PASS">
+    <test started-at="2023-07-06T09:39:25Z" name="Test" finished-at="2023-07-06T09:41:43Z" duration-ms="137635">
+      <class name="com.qa.testscripts.QuickSmsTest">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.QuickSmsTest@53812a9b]" started-at="2023-07-06T09:39:25Z" name="intializeBrowser" finished-at="2023-07-06T09:40:57Z" duration-ms="92231" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserIsAbleToChangePassword()[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@53812a9b]" started-at="2023-07-05T13:54:36Z" name="verifyUserIsAbleToChangePassword" finished-at="2023-07-05T13:55:14Z" duration-ms="38245" status="PASS">
+        <test-method signature="verifyUserIsAbleToSendQuickSms()[pri:0, instance:com.qa.testscripts.QuickSmsTest@53812a9b]" started-at="2023-07-06T09:40:57Z" name="verifyUserIsAbleToSendQuickSms" finished-at="2023-07-06T09:41:38Z" duration-ms="40129" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToChangePassword -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@53812a9b]" started-at="2023-07-05T13:55:14Z" name="browserQuit" finished-at="2023-07-05T13:55:22Z" duration-ms="8597" status="PASS">
+        </test-method> <!-- verifyUserIsAbleToSendQuickSms -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.QuickSmsTest@53812a9b]" started-at="2023-07-06T09:41:38Z" name="browserQuit" finished-at="2023-07-06T09:41:43Z" duration-ms="5223" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToChangePassword status=SUCCESS method=ForgotPassWordTest.verifyUserIsAbleToChangePassword()[pri:0, instance:com.qa.testscripts.ForgotPassWordTest@53812a9b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToSendQuickSms status=SUCCESS method=QuickSmsTest.verifyUserIsAbleToSendQuickSms()[pri:0, instance:com.qa.testscripts.QuickSmsTest@53812a9b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.ForgotPassWordTest -->
+      </class> <!-- com.qa.testscripts.QuickSmsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,6 +3,7 @@ package com.qa.testscripts;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
@@ -15,6 +16,7 @@ public class QuickSmsTest extends Base{
 	LoginPage loginpage;
 	QuickSmsPage qsms;
 	
+	@Test
 	public void verifyUserIsAbleToSendQuickSms() throws IOException {
 		homepage=new HomePage(driver);
 		loginpage=new LoginPage(driver);
