@@ -37,6 +37,16 @@ public class LoginTest extends Base{
 		Assert.assertEquals(actualMessage, expectedMessage, "Logout Failed");
 	
 	}
+	@Test(dataProvider="getInvalidLoginData", dataProviderClass=DataProviderUtility.class)
+	public void invalidLoginTest(String uName, String pass) {
+		loginpage=new LoginPage(driver);
+		loginpage.enterUserName(uName);
+		loginpage.enterPassword(pass);
+		loginpage.clickSubmit();
+		boolean title=loginpage.isPageTitleDisplayed();
+		Assert.assertTrue(title);
+	}
+	
 //	public void login() throws IOException {
 //		loginpage=new LoginPage(driver);
 //		loginpage.validLogin();

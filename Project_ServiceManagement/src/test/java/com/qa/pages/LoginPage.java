@@ -16,6 +16,7 @@ public class LoginPage {
 	this.driver=driver;
 	PageFactory.initElements(driver,this);
 	}
+	@FindBy(xpath="//p[text()='Sign in to start your session']")WebElement pageTitle;
 	@FindBy(xpath="//input[@name='identity']")WebElement userName;
 	@FindBy(xpath="//input[@name='password']")WebElement passWord;
 	@FindBy(xpath="//input[@name='submit']")WebElement button;
@@ -48,6 +49,9 @@ public class LoginPage {
 	public String getLogoutMessage() {
 		WaitsUtility.waitForElement(driver, logoutMsg);
 		return page.getElementText(logoutMsg);
+	}
+	public boolean isPageTitleDisplayed() {
+		return pageTitle.isDisplayed();
 	}
 //	public void validLogin() throws IOException {
 //		String username=ExcelUtility.getString(1, 0, System.getProperty("user.dir")+constants.Constance.TESTDATAFILE, "testSheet");

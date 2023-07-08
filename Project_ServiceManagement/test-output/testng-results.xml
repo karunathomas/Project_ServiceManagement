@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-06T10:38:37Z" name="Suite" finished-at="2023-07-06T10:40:16Z" duration-ms="99132">
+  <suite started-at="2023-07-06T20:29:20Z" name="Suite" finished-at="2023-07-06T20:32:42Z" duration-ms="201989">
     <groups>
     </groups>
-    <test started-at="2023-07-06T10:38:37Z" name="Test1" finished-at="2023-07-06T10:40:16Z" duration-ms="99132">
-      <class name="com.qa.testscripts.AddClientTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:38:37Z" name="intializeBrowser" finished-at="2023-07-06T10:39:06Z" duration-ms="28676" status="PASS">
+    <test started-at="2023-07-06T20:29:20Z" name="Test" finished-at="2023-07-06T20:32:42Z" duration-ms="201989">
+      <class name="com.qa.testscripts.LoginTest">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:29:20Z" name="intializeBrowser" finished-at="2023-07-06T20:30:34Z" duration-ms="73609" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="addClientDetailsWithoutClientName()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:39:06Z" name="addClientDetailsWithoutClientName" finished-at="2023-07-06T10:39:22Z" duration-ms="15890" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addClientDetailsWithoutClientName -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:39:22Z" name="browserQuit" finished-at="2023-07-06T10:39:33Z" duration-ms="11604" status="PASS">
+        <test-method signature="invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:30:34Z" name="invalidLoginTest" data-provider="getInvalidLoginData" finished-at="2023-07-06T20:30:41Z" duration-ms="7059" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addClientDetailsWithoutClientName status=SUCCESS method=AddClientTest.addClientDetailsWithoutClientName()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b] output={null}]]]>
+                <![CDATA[admine@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:30:41Z" name="browserQuit" finished-at="2023-07-06T20:30:49Z" duration-ms="7978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:39:33Z" name="intializeBrowser" finished-at="2023-07-06T10:40:01Z" duration-ms="27258" status="PASS">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:30:49Z" name="intializeBrowser" finished-at="2023-07-06T20:31:17Z" duration-ms="27887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,24 +56,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="verifyUserAbletoAddClientDetails()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:40:01Z" name="verifyUserAbletoAddClientDetails" finished-at="2023-07-06T10:40:14Z" duration-ms="13758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserAbletoAddClientDetails -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b]" started-at="2023-07-06T10:40:14Z" name="browserQuit" finished-at="2023-07-06T10:40:16Z" duration-ms="1884" status="PASS">
+        <test-method signature="invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:31:17Z" name="invalidLoginTest" data-provider="getInvalidLoginData" finished-at="2023-07-06T20:31:23Z" duration-ms="6206" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserAbletoAddClientDetails status=SUCCESS method=AddClientTest.verifyUserAbletoAddClientDetails()[pri:0, instance:com.qa.testscripts.AddClientTest@40f1be1b] output={null}]]]>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passsword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:31:23Z" name="browserQuit" finished-at="2023-07-06T20:31:26Z" duration-ms="3057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.AddClientTest -->
-      <class name="com.qa.testscripts.SendSmsTest">
-        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66]" started-at="2023-07-06T10:38:37Z" name="intializeBrowser" finished-at="2023-07-06T10:39:05Z" duration-ms="27256" status="PASS">
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:31:26Z" name="intializeBrowser" finished-at="2023-07-06T20:31:43Z" duration-ms="16497" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,22 +94,98 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeBrowser -->
-        <test-method signature="sendingSms()[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66]" started-at="2023-07-06T10:39:05Z" name="sendingSms" finished-at="2023-07-06T10:39:21Z" duration-ms="16506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendingSms -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66]" started-at="2023-07-06T10:39:21Z" name="browserQuit" finished-at="2023-07-06T10:39:33Z" duration-ms="11979" status="PASS">
+        <test-method signature="invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:31:43Z" name="invalidLoginTest" data-provider="getInvalidLoginData" finished-at="2023-07-06T20:31:45Z" duration-ms="2213" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sendingSms status=SUCCESS method=SendSmsTest.sendingSms()[pri:0, instance:com.qa.testscripts.SendSmsTest@7a791b66] output={null}]]]>
+                <![CDATA[admin1@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:31:45Z" name="browserQuit" finished-at="2023-07-06T20:31:46Z" duration-ms="817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.qa.testscripts.SendSmsTest -->
-    </test> <!-- Test1 -->
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:31:46Z" name="intializeBrowser" finished-at="2023-07-06T20:32:07Z" duration-ms="20822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeBrowser -->
+        <test-method signature="verifyLoginCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:32:07Z" name="verifyLoginCredentials" data-provider="getDataFromDataProvider" finished-at="2023-07-06T20:32:18Z" duration-ms="11507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginCredentials -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:32:18Z" name="browserQuit" finished-at="2023-07-06T20:32:19Z" duration-ms="1152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginCredentials status=SUCCESS method=LoginTest.verifyLoginCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="intializeBrowser(java.lang.String)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:32:19Z" name="intializeBrowser" finished-at="2023-07-06T20:32:33Z" duration-ms="13936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeBrowser -->
+        <test-method signature="verifyUserisAbletoLogout()[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:32:33Z" name="verifyUserisAbletoLogout" finished-at="2023-07-06T20:32:42Z" duration-ms="8364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserisAbletoLogout -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b]" started-at="2023-07-06T20:32:42Z" name="browserQuit" finished-at="2023-07-06T20:32:42Z" duration-ms="792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserisAbletoLogout status=SUCCESS method=LoginTest.verifyUserisAbletoLogout()[pri:0, instance:com.qa.testscripts.LoginTest@40f1be1b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.qa.testscripts.LoginTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
