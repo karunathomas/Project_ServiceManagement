@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.qa.servicemanagementproject.Listeners"/>
   </listeners>
-  <test thread-count="2" parallel="classes" name="Test1(failed)">
+  <test thread-count="5" parallel="classes" name="Test1(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.testscripts.SendSmsTest">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="sendingSms"/>
-          <include name="intializeBrowser"/>
-        </methods>
-      </class> <!-- com.qa.testscripts.SendSmsTest -->
       <class name="com.qa.testscripts.AddClientTest">
         <methods>
           <include name="browserQuit"/>
+          <include name="addClientDetailsWithoutClientName"/>
           <include name="verifyUserAbletoAddClientDetails"/>
           <include name="intializeBrowser"/>
         </methods>

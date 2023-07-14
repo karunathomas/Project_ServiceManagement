@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\aser\git\Project_ServiceManagement\Project_ServiceManagement\testng.xml</span>
+                    <span>C:\Users\aser\git\Project_ServiceManagement\Project_ServiceManagement\Parellel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.AddClientTest" class="method navigator-link" hash-for-method="addClientDetailsWithoutClientName">addClientDetailsWithoutClientName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.AddClientTest" class="method navigator-link" hash-for-method="verifyUserAbletoAddClientDetails">verifyUserAbletoAddClientDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +130,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(admin@admin.com, passsword)">invalidLoginTest(admin@admin.com, passsword)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(admine@admin.com, password)">invalidLoginTest(admine@admin.com, password)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest(admin1@admin.com, password1)">invalidLoginTest(admin1@admin.com, password1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.LoginTest" class="method navigator-link" hash-for-method="verifyLoginCredentials(admin@admin.com, password)">verifyLoginCredentials(admin@admin.com, password)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.LoginTest" class="method navigator-link" hash-for-method="verifyUserisAbletoLogout">verifyUserisAbletoLogout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.SendSmsTest" class="method navigator-link" hash-for-method="sendingSms">sendingSms</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,49 +145,101 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.testscripts.LoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testscripts.AddClientTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidLoginTest(admin@admin.com, passsword)">
-                  </a> <!-- invalidLoginTest(admin@admin.com, passsword) -->
-                  <span class="method-name">invalidLoginTest</span>
-                  <span class="parameters">(admin@admin.com, passsword)</span>
+                  <a name="addClientDetailsWithoutClientName">
+                  </a> <!-- addClientDetailsWithoutClientName -->
+                  <span class="method-name">addClientDetailsWithoutClientName</span>
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:145)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:49)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:106)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:309)
+	at com.qa.utilities.ExcelUtility.getString(ExcelUtility.java:50)
+	at com.qa.testscripts.AddClientTest.addClientDetailsWithoutClientName(AddClientTest.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0X0
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:260)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:141)
+	... 20 more
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.testscripts.AddClientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidLoginTest(admine@admin.com, password)">
-                  </a> <!-- invalidLoginTest(admine@admin.com, password) -->
-                  <span class="method-name">invalidLoginTest</span>
-                  <span class="parameters">(admine@admin.com, password)</span>
+                  <a name="verifyUserAbletoAddClientDetails">
+                  </a> <!-- verifyUserAbletoAddClientDetails -->
+                  <span class="method-name">verifyUserAbletoAddClientDetails</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;KARUNA-TEMP85&apos;, ip: &apos;192.168.98.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3115cac3f60f6a242fb52733cc65f0db, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\aser\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58633/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3115cac3f60f6a242fb52733cc65f0db
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:280)
+	at com.qa.servicemanagementproject.Base.browserQuit(Base.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;KARUNA-TEMP85&apos;, ip: &apos;192.168.98.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	... 22 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;KARUNA-TEMP85&apos;, ip: &apos;192.168.98.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:114)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	... 3 more
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testscripts.SendSmsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidLoginTest(admin1@admin.com, password1)">
-                  </a> <!-- invalidLoginTest(admin1@admin.com, password1) -->
-                  <span class="method-name">invalidLoginTest</span>
-                  <span class="parameters">(admin1@admin.com, password1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginCredentials(admin@admin.com, password)">
-                  </a> <!-- verifyLoginCredentials(admin@admin.com, password) -->
-                  <span class="method-name">verifyLoginCredentials</span>
-                  <span class="parameters">(admin@admin.com, password)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserisAbletoLogout">
-                  </a> <!-- verifyUserisAbletoLogout -->
-                  <span class="method-name">verifyUserisAbletoLogout</span>
+                  <a name="sendingSms">
+                  </a> <!-- sendingSms -->
+                  <span class="method-name">sendingSms</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,22 +247,23 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\aser\git\Project_ServiceManagement\Project_ServiceManagement\testng.xml</span>
+            <span class="header-content">C:\Users\aser\git\Project_ServiceManagement\Project_ServiceManagement\Parellel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.servicemanagementproject.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.testscripts.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testscripts.AddClientTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testscripts.SendSmsTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,7 +275,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test1 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,32 +301,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginCredentials')
-data.setCell(0, 2, 'com.qa.testscripts.LoginTest')
-data.setCell(0, 3, 11507);
+data.setCell(0, 1, 'sendingSms')
+data.setCell(0, 2, 'com.qa.testscripts.SendSmsTest')
+data.setCell(0, 3, 110732);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserisAbletoLogout')
-data.setCell(1, 2, 'com.qa.testscripts.LoginTest')
-data.setCell(1, 3, 8364);
+data.setCell(1, 1, 'addClientDetailsWithoutClientName')
+data.setCell(1, 2, 'com.qa.testscripts.AddClientTest')
+data.setCell(1, 3, 4788);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidLoginTest')
-data.setCell(2, 2, 'com.qa.testscripts.LoginTest')
-data.setCell(2, 3, 7059);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invalidLoginTest')
-data.setCell(3, 2, 'com.qa.testscripts.LoginTest')
-data.setCell(3, 3, 6206);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invalidLoginTest')
-data.setCell(4, 2, 'com.qa.testscripts.LoginTest')
-data.setCell(4, 3, 2213);
+data.setCell(2, 1, 'verifyUserAbletoAddClientDetails')
+data.setCell(2, 2, 'com.qa.testscripts.AddClientTest')
+data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -291,66 +344,59 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testscripts.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.testscripts.AddClientTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyUserAbletoAddClientDetails</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.SendSmsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">intializeBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.AddClientTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">intializeBrowser(chrome)</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">invalidLoginTest(admine@admin.com, password)</span>
-                <span class="method-start">73610 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addClientDetailsWithoutClientName</span>
+                <span class="method-start">76297 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.SendSmsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sendingSms</span>
+                <span class="method-start">76317 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.AddClientTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.lang.String,...)</span>
-                <span class="method-start">80678 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name=addClientDetailsWithoutClientName status=FAILURE method=AddClientTest.addClientDeta...)</span>
+                <span class="method-start">81687 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">intializeBrowser(chrome)</span>
-                <span class="method-start">88657 ms</span>
+                <span class="method-start">111741 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidLoginTest(admin@admin.com, passsword)</span>
-                <span class="method-start">116544 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.SendSmsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.lang.String,...)</span>
-                <span class="method-start">122758 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intializeBrowser(chrome)</span>
-                <span class="method-start">125815 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidLoginTest(admin1@admin.com, password1)</span>
-                <span class="method-start">142313 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.lang.String,...)</span>
-                <span class="method-start">144527 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intializeBrowser(chrome)</span>
-                <span class="method-start">145346 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginCredentials(admin@admin.com, password)</span>
-                <span class="method-start">166169 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyLoginCredentials status=SUCCESS method=LoginTest.verifyLoginCredentials(java....)</span>
-                <span class="method-start">177680 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intializeBrowser(chrome)</span>
-                <span class="method-start">178833 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyUserisAbletoLogout</span>
-                <span class="method-start">192769 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyUserisAbletoLogout status=SUCCESS method=LoginTest.verifyUserisAbletoLogout()...)</span>
-                <span class="method-start">201134 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name=sendingSms status=SUCCESS method=SendSmsTest.sendingSms()[pri:0, instance:com.qa.te...)</span>
+                <span class="method-start">187051 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
